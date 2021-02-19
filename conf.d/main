@@ -1,6 +1,7 @@
 #!/bin/bash -ex
 
 # Set variables
+APP_VER=3.5.5
 USER=mayan
 APP_NAME=mayan-edms
 APP_DIR=/opt/$APP_NAME
@@ -41,8 +42,8 @@ service postgresql start
 # deployments" docs: https://docs.mayan-edms.com/chapters/deploying.html
 
 su - $USER -c "$BIN/pip install --no-cache-dir -U pip"
-su - $USER -c "$BIN/pip install --no-cache-dir $APP_NAME"
-su - $USER -c "$BIN/pip install --no-cache-dir psycopg2==2.8.4 redis==3.4.1"
+su - $USER -c "$BIN/pip install --no-cache-dir $APP_NAME==$APP_VER"
+su - $USER -c "$BIN/pip install --no-cache-dir psycopg2==2.8.6 redis==3.5.3"
 su - postgres -c "createuser $DB_USER"
 su - postgres -c "createdb -O $DB_USER $DB_NAME"
 su - postgres -c "psql postgres" <<EOF

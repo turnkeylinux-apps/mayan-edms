@@ -8,7 +8,7 @@ or repository for electronic documents.
 
 This appliance includes all the standard features in `TurnKey Core`_:
 
-- Mayan EDMS 3.1.9 installed via PIP from `PyPI`_ into virtualenv within
+- Mayan EDMS installed via PIP from `PyPI`_ into virtualenv within
   /opt/mayan-edms
 
   **Security note**: Updates to Mayan EDMS may require supervision so
@@ -17,7 +17,7 @@ This appliance includes all the standard features in `TurnKey Core`_:
 
 - Includes all pre-reqs: Virtualenv/Django/Gunicorn/Celery/Redis/Supervisor
 - SSL support out of the box.
-- PostgreSQL is is installed as Mayan's backend database 
+- PostgreSQL is installed as Mayan's backend database 
 - `Adminer`_ administration frontend for PostgreSQL (listening on
   port 12322 - uses SSL).
 - Nginx configured as reverse proxy for Mayan WebUI.
@@ -42,8 +42,8 @@ Read through the relevant Mayan EDMS `Release Notes`_ since the version you are
 upgrading from.
 
 Check Mayan EDMS `Direct Deployment - Basic`_ documentation for dependency
-updates, and other adjustments that may be required. Then to upgrade to the
-latest version (using 3.1.9 as an example below) of Mayan EDMS from the command
+updates, and other adjustments that may be required. Then to upgrade to the 
+latest version (using 3.5.5 as an example below) of Mayan EDMS from the command
 line::
 
     REMOVE=/etc/mayan/removals.txt
@@ -51,8 +51,9 @@ line::
     supervisorctl stop all
     ENV=/etc/mayan/env
     BIN=/opt/mayan-edms/bin
+    su - mayan -c ". $ENV && $BIN/pip install -U pip
     su - mayan -c ". $ENV && $BIN/pip uninstall -r $REMOVE"
-    su - mayan -c ". $ENV && $BIN/pip install mayan-edms==3.1.9"
+    su - mayan -c ". $ENV && $BIN/pip install mayan-edms==3.5.5"
     supervisorctl start all
 
 

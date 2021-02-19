@@ -40,5 +40,4 @@ graphviz            /* Graph drawing */
 libimage-exiftool-perl
                     /* Provides 'exiftool' - tool to read/write file metadata */
 sane-utils          /* scanner toolds */
-unpaper             /* post-processing tool for scanned pages */
 poppler-utils       /* PDF utilities (based on Poppler) */

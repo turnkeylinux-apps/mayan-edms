@@ -1,3 +1,15 @@
+turnkey-mayan-edms-16.1 (1) turnkey; urgency=low
+
+  * Install latest (Python3) Mayan-EDMS from upstream (via pip) - v3.5.5
+
+  * Improve Mayan logging config - (hopefully) closes #1523.
+    [ Stefan Davis <stefan@turnkeylinux.org> ]
+
+  * Note: Please refer to turnkey-core's 16.1 changelog for changes common to 
+    all appliances. Here we only describe changes specific to this appliance. 
+
+ -- Ken Robinson <ken@turnkeylinux.org>  Wed, 17 Feb 2021 18:47:24 -0500
+
 turnkey-mayan-edms-16.0 (1) turnkey; urgency=low
 
   * Install latest (Python3) Mayan-EDMS from upstream (via pip) - v3.4.7.
