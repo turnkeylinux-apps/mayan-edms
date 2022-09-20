@@ -1,3 +1,14 @@
+turnkey-mayan-edms-17.0 (1) turnkey; urgency=low
+
+  * Install latest (Python3) Mayan-EDMS from upstream (via pip) - v4.2.7
+
+  * Updated all relevant Debian packages to Bullseye/11 versions
+
+  * Note: Please refer to turnkey-core's 17.0 changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Stefan Davis <stefan@turnkeylinux.org>  Tue, 12 Jul 2022 02:24:36 +0000
+
 turnkey-mayan-edms-16.1 (1) turnkey; urgency=low
 
   * Install latest (Python3) Mayan-EDMS from upstream (via pip) - v3.5.5

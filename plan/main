@@ -23,13 +23,19 @@ gcc                 /* GNU C compiler */
 g++                 /* GNU C++ compiler */
 python3-dev         /* header files and a static library for Python */
 libpq-dev           /* header files for libpq */
+libpq5
 libjpeg-dev         /* Development files for the JPEG library */
 libpng-dev          /* PNG library - development */
 libtiff-dev         /* Tag Image File Format library (TIFF) */
 zlib1g-dev          /* header files for zlib (gzip/pkzip) */
 python3-passlib     /* Comprehensive password hashing framework */
 
-libreoffice         /* office productivity suite */
+libreoffice-calc-nogui
+libreoffice-draw-nogui
+libreoffice-impress-nogui
+libreoffice-math-nogui
+libreoffice-writer-nogui
+
 libmagic1           /* File type determination library using "magic" numbers */
 libfuse2            /* FUSE library */
 ghostscript         /* interpreter for the PostScript language and for PDF */
@@ -41,3 +47,17 @@ libimage-exiftool-perl
                     /* Provides 'exiftool' - tool to read/write file metadata */
 sane-utils          /* scanner toolds */
 poppler-utils       /* PDF utilities (based on Poppler) */
+
+libldap-2.4-2       /* needed for python-ldap */
+libldap-dev
+libsasl2-dev
+
+fonts-arphic-uming
+fonts-arphic-ukai
+fonts-unfonts-core
+
+libarchive-zip-perl
+libfile-mimeinfo-perl
+
+python3-venv
+rabbitmq-server

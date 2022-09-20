@@ -9,9 +9,9 @@ Option:
 
 import sys
 import getopt
-import inithooks_cache
+from libinithooks import inithooks_cache
 
-from dialog_wrapper import Dialog
+from libinithooks.dialog_wrapper import Dialog
 from pgsqlconf import PostgreSQL
 from passlib.hash import django_pbkdf2_sha256 as djpass 
 

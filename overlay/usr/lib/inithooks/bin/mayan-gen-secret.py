@@ -6,8 +6,6 @@ method Mayan does on initial install)
 """
 
 import sys
-sys.path.append('/opt/mayan-edms/lib/python3/site-packages')
-
 from django.utils.crypto import get_random_string
 
 chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
