@@ -4,7 +4,7 @@
 postgresql          /* PostgresSQL Server */
 
 adminer             /* Adminer PHP DB Admin */
-php-cgi             /* adminer depend */
+php-fpm             /* adminer depend */
 php-pgsql           /* needed for adminer pg support */
 
 webmin-postgresql   /* PostgreSQL Admin for Webmin */

@@ -98,12 +98,11 @@ installed_version=$(cat $APP_DIR/media/system/VERSION)
 service postgresql stop
 service redis-server stop
 rabbitmqctl stop
+service rabbitmq-server stop
 
 # nginx config
-rm /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-enabled/tkl-default
 ln -s /etc/nginx/sites-available/mayan /etc/nginx/sites-enabled/mayan
-ln -s /etc/adminer/nginx.conf /etc/nginx/sites-available/adminer
-ln -s /etc/nginx/sites-available/adminer /etc/nginx/sites-enabled/adminer
 
 # Configure fastcgi for Adminer via Nginx (php-fastcgi)
 systemctl enable php-fastcgi
