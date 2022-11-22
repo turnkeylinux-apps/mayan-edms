@@ -1,3 +1,13 @@
+turnkey-mayan-edms-17.1 (1) turnkey; urgency=low
+
+  * Updated all Debian packages to latest.
+    [ autopatched by buildtasks ]
+
+  * Patched bugfix release. Closes #1734.
+    [ autopatched by buildtasks ]
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 11 Nov 2022 02:02:52 +0000
+
 turnkey-mayan-edms-17.0 (1) turnkey; urgency=low
 
   * Install latest (Python3) Mayan-EDMS from upstream (via pip) - v4.2.7
